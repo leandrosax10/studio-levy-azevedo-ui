@@ -19,7 +19,7 @@ import {
   Image,
   useBreakpointValue,
 } from '@chakra-ui/react';
-//import logoImage from 'assets/logo.png';
+import logoImage from '../assets/logo.png';
 //import Avvvatars from 'avvvatars-react';
 
 //import { useAuth } from 'hooks/useAuth';
@@ -72,7 +72,7 @@ export function MobileNav({
             w={useBreakpointValue({
               base: '10rem',
             })}
-            src='/src/assets/logo.png'
+            src={logoImage}
             alt="Logo Studio Levy Azevedo"
           />
         </Link>

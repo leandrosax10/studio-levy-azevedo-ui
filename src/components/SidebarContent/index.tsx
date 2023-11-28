@@ -9,7 +9,9 @@ import {
   Image,
   Text
 } from '@chakra-ui/react';
-//import logoImage from 'assets/logo.png';
+//import logoImage from 'E:/dev/studio-levy-ui/studio-levy-azevedo-ui/src/assets/logo.png'
+
+import logoImage from '../assets/logo.png';
 
 
 import { LinkItems } from './items';
@@ -43,7 +45,7 @@ export function SidebarContent({ onClose, ...rest }: SidebarProps) {
     >
       <Flex h="20" alignItems="center" mx="8" justifyContent="space-between">
         <Link to="/dashboard">
-          <Image src='/src/assets/logo.png' alt="Logo Studio Levy Azevedo" />
+          <Image src={logoImage} alt="Logo Studio Levy Azevedo" />
         </Link>
         <CloseButton display={{ base: 'flex', md: 'none' }} onClick={onClose} />
       </Flex>
