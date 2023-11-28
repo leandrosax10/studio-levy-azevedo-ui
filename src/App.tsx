@@ -1,6 +1,10 @@
+import { BrowserRouter } from "react-router-dom";
+import { MainRoutes } from "./routes";
 
 export const App = () => {
-  return <div className="App">
-    Funcionando
-  </div>;
+  return (
+    <BrowserRouter>
+      <MainRoutes />
+    </BrowserRouter>
+  );
 };
