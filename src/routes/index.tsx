@@ -3,11 +3,12 @@ import { Dashboard } from "../pages/Dashboard";
 import { Comandas } from "../pages/comandas";
 import { Clientes } from "../pages/clientes";
 import { Usuarios } from "../pages/usuarios";
+import { Login } from "../pages/Login";
 
 export const MainRoutes = () => {
   return (
     <Routes>
-      {/* <Route path="/" element={<Login />} /> */}
+       <Route path="/" element={<Login />} /> 
       <Route path="/home" element={<Dashboard/>} />
       <Route path="/comandas" element={<Comandas/>} />
       <Route path="/clientes" element={<Clientes/>} />
