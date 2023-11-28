@@ -1,10 +1,13 @@
 import { BrowserRouter } from "react-router-dom";
 import { MainRoutes } from "./routes";
+import { ChakraProvider } from "@chakra-ui/react";
 
 export const App = () => {
   return (
-    <BrowserRouter>
-      <MainRoutes />
-    </BrowserRouter>
+    <ChakraProvider>
+      <BrowserRouter>
+        <MainRoutes />
+      </BrowserRouter>
+    </ChakraProvider>
   );
 };
