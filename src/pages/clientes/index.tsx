@@ -125,8 +125,6 @@ export function Clientes() {
                     </FormControl>
                   </Flex>
                 </Stack>
-                <Flex></Flex>
-
                 <Stack spacing="6">
                   <Button
                     height={46}
