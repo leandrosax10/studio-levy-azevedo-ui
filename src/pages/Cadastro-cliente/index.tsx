@@ -3,12 +3,13 @@ import {
   Button,
   Flex,
   FormControl,
-  FormLabel,
+  Text,
   HStack,
   Input,
   Link,
   Stack,
   useBreakpointValue,
+  Heading,
 } from "@chakra-ui/react";
 import Sidebar from "../../components/SideBar";
 
@@ -29,6 +30,9 @@ export function CadastroClientes() {
               e.preventDefault();
             }}
           >
+            <Heading mb={5} size="lg" color={"black"}>
+              Cadastrar Cliente
+            </Heading>
             <Flex
               flexDirection={useBreakpointValue({
                 base: "column",
@@ -36,7 +40,7 @@ export function CadastroClientes() {
               })}
             >
               <FormControl w="100%">
-                <FormLabel htmlFor="sequential">Nome</FormLabel>
+                <Text>Nome</Text>
                 <Input
                   isRequired
                   placeholder="Nome completo"
@@ -46,8 +50,8 @@ export function CadastroClientes() {
                   w={useBreakpointValue({ base: "100%", md: "95%" })}
                 />
               </FormControl>
-              <FormControl>
-                <FormLabel htmlFor="telephone">Telefone</FormLabel>
+              <FormControl mt={{base: 4, md: 0}}>
+                <Text >Telefone</Text>
                 <Input
                   isRequired
                   placeholder="(00)00000-0000"
@@ -60,34 +64,16 @@ export function CadastroClientes() {
               </FormControl>
             </Flex>
 
-            <Stack spacing="5">
+            
+            <Stack spacing="5" mt={4}>
               <Flex
                 flexDirection={useBreakpointValue({
                   base: "column",
                   md: "row",
                 })}
               >
-                <FormControl>
-                  <FormLabel htmlFor="endereco">Endereço</FormLabel>
-                  <Input
-                    isRequired
-                    id="endereco"
-                    type="text"
-                    name="endereco"
-                    w={useBreakpointValue({ base: "100%", md: "97%" })}
-                  />
-                </FormControl>
-              </Flex>
-            </Stack>
-            <Stack spacing="5">
-              <Flex
-                flexDirection={useBreakpointValue({
-                  base: "column",
-                  md: "row",
-                })}
-              >
-                <FormControl>
-                  <FormLabel htmlFor="cpf">CPF</FormLabel>
+                <FormControl >
+                  <Text >CPF</Text>
                   <Input
                     isRequired
                     placeholder="999.999.999-99"
@@ -97,8 +83,8 @@ export function CadastroClientes() {
                     w={useBreakpointValue({ base: "100%", md: "95%" })}
                   />
                 </FormControl>
-                <FormControl>
-                  <FormLabel htmlFor="name">Email</FormLabel>
+                <FormControl mt={{base: 4, md: 0}}>
+                  <Text>Email</Text>
                   <Input
                     isRequired
                     placeholder="email@email.com"
@@ -106,6 +92,25 @@ export function CadastroClientes() {
                     type="email"
                     name="email"
                     w={useBreakpointValue({ base: "100%", md: "95%" })}
+                  />
+                </FormControl>
+              </Flex>
+            </Stack>
+            <Stack spacing="5" mt={4}>
+              <Flex
+                flexDirection={useBreakpointValue({
+                  base: "column",
+                  md: "row",
+                })}
+              >
+                <FormControl >
+                  <Text >Endereço</Text>
+                  <Input
+                    isRequired
+                    id="endereco"
+                    type="text"
+                    name="endereco"
+                    w={useBreakpointValue({ base: "100%", md: "97%" })}
                   />
                 </FormControl>
               </Flex>
