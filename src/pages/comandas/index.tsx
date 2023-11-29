@@ -59,11 +59,18 @@ export function Comandas() {
             <Flex mt="8" justify="flex">
               <HStack spacing="4">
                 <Link href="/home">
-                  <Button as="a" colorScheme="red">
+                  <Button
+                    as="a"
+                    colorScheme="red"
+                    variant="outline"
+                    borderRadius={8}
+                  >
                     Cancelar
                   </Button>
                 </Link>
                 <Button
+                  borderRadius={8}
+                  w={"100px"}
                   background="#406D77"
                   variant="primary"
                   color="white"
