@@ -1,8 +1,10 @@
 import { IconType } from 'react-icons';
+import { CiBadgeDollar } from 'react-icons/ci';
 import {
   FiHome,
   /* FiMail, */
   FiUsers,
+  FiUser,
   /* FiFile, */
   FiFileText,
  /*  FiUserPlus, */
@@ -20,6 +22,7 @@ export const LinkItems: Array<LinkItemProps> = [
     icon: FiFileText,
     link: '/comandas',
   },
+  { name: 'Serviços', icon: CiBadgeDollar, link: '/lista-servicos' },
   { name: 'Clientes', icon: FiUsers, link: '/lista-clientes' },
-  { name: 'Usuários', icon: FiUsers, link: '/usuarios' },
+  { name: 'Usuários', icon: FiUser, link: '/usuarios' },
 ];
