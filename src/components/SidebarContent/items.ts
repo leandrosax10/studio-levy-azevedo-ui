@@ -20,6 +20,6 @@ export const LinkItems: Array<LinkItemProps> = [
     icon: FiFileText,
     link: '/comandas',
   },
-  { name: 'Clientes', icon: FiUsers, link: '/clientes' },
+  { name: 'Clientes', icon: FiUsers, link: '/lista-clientes' },
   { name: 'Usuários', icon: FiUsers, link: '/usuarios' },
 ];
