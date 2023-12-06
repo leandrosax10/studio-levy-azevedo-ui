@@ -43,6 +43,18 @@ export function Comandas() {
                 </Select>
               </FormControl>
               <FormControl mt={{ base: 5, md: 0 }}>
+                <Text>Codigo do profissional</Text>
+                <Select
+                  id="perfilId"
+                  name="perfil"
+                  w={{ base: "100%", md: "98%" }}
+                >
+                  <option value="Selecione">Selecione</option>
+                  <option value="Corte">Corte</option>
+                  <option value="Luzes">Luzes</option>
+                </Select>
+              </FormControl>
+              <FormControl mt={{ base: 5, md: 0 }}>
                 <Text>Serviço</Text>
                 <Select
                   id="perfilId"

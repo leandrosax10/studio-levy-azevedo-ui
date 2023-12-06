@@ -4,7 +4,7 @@ import { Comandas } from "../pages/comandas";
 import { Usuarios } from "../pages/cadastro-usuarios";
 import { Login } from "../pages/Login";
 import { ClienteList } from "../pages/Lista-clientes";
-import { CadastroClientes } from "../pages/cadastro-cliente";
+import { CadastroClientes } from "../pages/Cadastro-cliente";
 import { ServicoList } from "../pages/Lista-serviços";
 import { Servicos } from "../pages/cadastro-servico";
 import { UsuarioList } from "../pages/Lista-usuarios";
