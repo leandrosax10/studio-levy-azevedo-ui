@@ -11,7 +11,8 @@ import {
   Text,
 } from "@chakra-ui/react";
 import Sidebar from "../../components/SideBar";
-
+// // function
+// console.log("dados encontrados")
 export function Comandas() {
   return (
     <>
@@ -40,6 +41,18 @@ export function Comandas() {
                   <option value="Selecione">Selecione</option>
                   <option value="cliente">Nome do Cliente1</option>
                   <option value="cliente">Nome do Cliente2</option>
+                </Select>
+              </FormControl>
+              <FormControl w="100%">
+                <Text>Cliente</Text>
+                <Select
+                  id="dados"
+                  name="dados"
+                  w={{ base: "100%", md: "98%" }}
+                >
+                  <option value="Selecione">Selecione</option>
+                  <option value="dados1">Nome </option>
+                  <option value="daods1">Nome</option>
                 </Select>
               </FormControl>
               <FormControl mt={{ base: 5, md: 0 }}>
